@@ -21,18 +21,28 @@ python3 -m http.server 8000
 # luego abre http://localhost:8000
 ```
 
-## Qué falta personalizar (busca `TODO` en el código)
+## Datos reales ya incluidos
 
-- **Dirección real** — aparece en la sección Horarios y en Contacto.
-- **Teléfono y correo** — en la sección Contacto.
-- **Mapa de Google** — reemplaza el `src` del `<iframe>` con tu
-  ubicación real (Google Maps → Compartir → Insertar un mapa).
-- **Eventos** — actualiza las fechas y títulos en la sección Eventos.
+- **Logo oficial** (`assets/logo.png`) — en el encabezado, el pie y el favicon.
+- **Dirección:** 13450 108 Ave, Surrey, BC
+- **Teléfono:** (604) 728-8510
+- **Facebook:** https://www.facebook.com/tdvcanada/
+- **Horarios:** Domingo 3:00 PM · Miércoles 7:00 PM (estudio bíblico)
+- **Misión e historia:** la iglesia abrió en Surrey en 2014 para servir
+  a la creciente comunidad latina.
+
+## Qué falta confirmar / personalizar (busca `TODO` en el código)
+
+- **Correo electrónico** — confirma el correo real (ahora usa un valor tentativo).
+- **Instagram / YouTube** — agrega los enlaces si la iglesia los tiene.
+- **Eventos** — actualiza las fechas y títulos reales en la sección Eventos.
 - **Prédicas** — enlaza los videos reales de YouTube.
-- **Redes sociales** — enlaces de Facebook, Instagram y YouTube.
-- **Historia de la iglesia** — personaliza el texto de "Nosotros".
-- **Imagen del hero** — actualmente usa una foto de Unsplash; puedes
-  reemplazar la URL en `styles.css` (`.hero`) por una foto propia.
+- **Pastor** — agrega el nombre del pastor/líderes si se desea.
+- **Logo de mayor resolución** — el logo actual es de 180×180 px (recuperado
+  del sitio anterior). Si tienes el archivo original, reemplaza `assets/logo.png`.
+- **Fotos propias** — `assets/hero-worship.jpg` y `assets/community.jpg` son
+  imágenes de archivo (Unsplash). Reemplázalas con fotos de la iglesia cuando
+  las tengas (mismos nombres de archivo para no tocar el código).
 
 ## Publicar (hosting gratuito)
 

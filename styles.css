@@ -82,8 +82,9 @@ a:hover { color: var(--gold); }
 }
 .nav-wrap { display: flex; align-items: center; justify-content: space-between; height: 72px; }
 
-.brand { display: flex; align-items: center; gap: .65rem; color: var(--navy); }
+.brand { display: flex; align-items: center; gap: .7rem; color: var(--navy); }
 .brand:hover { color: var(--navy); }
+.brand-logo { width: 44px; height: 44px; border-radius: 8px; display: block; }
 .brand-mark { color: var(--gold); font-size: 1.4rem; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
 .brand-text strong { font-family: var(--serif); font-size: 1.18rem; font-weight: 700; }
@@ -122,9 +123,8 @@ a:hover { color: var(--gold); }
   align-items: center;
   color: var(--white);
   background:
-    linear-gradient(120deg, rgba(20,40,68,.92), rgba(20,40,68,.55)),
-    url("https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=1600&q=80")
-      center/cover no-repeat;
+    linear-gradient(120deg, rgba(16,28,48,.90), rgba(16,28,48,.55)),
+    url("assets/hero-worship.jpg") center/cover no-repeat;
 }
 .hero-content { position: relative; max-width: 640px; padding: 5rem 0; }
 .hero h1 { font-size: clamp(2.6rem, 6vw, 4.4rem); margin-bottom: 1.2rem; }
@@ -141,6 +141,7 @@ a:hover { color: var(--gold); }
 
 /* ===================== Cards (horarios) ===================== */
 .cards-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.cards-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 760px; margin-inline: auto; }
 .card {
   background: var(--white);
   border-radius: var(--radius);
@@ -171,7 +172,10 @@ a:hover { color: var(--gold); }
 
 /* ===================== Nosotros ===================== */
 .about-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 3rem; align-items: start; }
+.about-photo { margin: 0 0 1.5rem; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.about-photo img { display: block; width: 100%; height: 280px; object-fit: cover; }
 .about-text p { color: var(--muted); font-size: 1.06rem; margin-top: 0; }
+.about-text strong { color: var(--navy); }
 .beliefs { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.2rem; }
 .beliefs li {
   background: var(--white);
@@ -240,7 +244,9 @@ a:hover { color: var(--gold); }
 /* ===================== Footer ===================== */
 .site-footer { background: var(--navy-deep); color: rgba(255,255,255,.8); padding: 3rem 0 2rem; }
 .footer-wrap { display: grid; gap: 1.5rem; text-align: center; }
-.footer-brand { display: flex; flex-direction: column; align-items: center; gap: .2rem; }
+.footer-brand { display: flex; flex-direction: column; align-items: center; gap: .4rem; }
+.footer-logo { background: var(--white); border-radius: 10px; padding: 6px; line-height: 0; box-shadow: var(--shadow); }
+.footer-logo img { width: 48px; height: 48px; display: block; }
 .footer-brand strong { font-family: var(--serif); color: var(--white); font-size: 1.3rem; }
 .footer-brand p { margin: 0; font-size: .85rem; }
 .footer-nav { display: flex; flex-wrap: wrap; gap: 1.4rem; justify-content: center; }
@@ -268,7 +274,7 @@ a:hover { color: var(--gold); }
   .nav a { padding: 1rem 6%; border-top: 1px solid rgba(31,58,95,.06); }
   .nav .nav-cta { border-radius: 0; text-align: center; }
 
-  .cards-3 { grid-template-columns: 1fr; }
+  .cards-3, .cards-2 { grid-template-columns: 1fr; }
   .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
   .location-bar { flex-direction: column; align-items: flex-start; text-align: left; }
 }

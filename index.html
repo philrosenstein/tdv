@@ -89,11 +89,11 @@
         <div class="location-bar">
           <div>
             <h3>Nuestra ubicación</h3>
-            <p>13450 108 Ave, Surrey, BC</p>
+            <p>7170 132 St, Surrey, BC (Newton)</p>
           </div>
           <a
             class="btn btn-primary"
-            href="https://www.google.com/maps/search/?api=1&query=Tabernaculo+de+Vida+13450+108+Ave+Surrey+BC"
+            href="https://www.google.com/maps/search/?api=1&query=Tabernaculo+de+Vida+7170+132+St+Surrey+BC"
             target="_blank"
             rel="noopener"
           >Ver en el mapa</a>
@@ -154,8 +154,11 @@
           <h2>Eventos y calendario</h2>
         </div>
 
-        <ul class="events">
-          <!-- TODO: actualiza con eventos reales -->
+        <!-- Los eventos se cargan automáticamente desde Google Calendar
+             (ver configuración en script.js). Si el calendario no está
+             configurado o no se puede cargar, se muestran estos eventos de
+             ejemplo como respaldo. -->
+        <ul class="events" id="events-list" data-state="fallback">
           <li class="event">
             <div class="event-date">
               <span class="event-day">12</span>
@@ -187,6 +190,9 @@
             </div>
           </li>
         </ul>
+        <p class="events-empty" id="events-empty" hidden>
+          No hay eventos próximos por ahora. ¡Vuelve pronto!
+        </p>
       </div>
     </section>
 
@@ -246,7 +252,7 @@
           <ul class="contact-list">
             <li>
               <strong>Dirección</strong>
-              13450 108 Ave, Surrey, BC
+              7170 132 St, Surrey, BC (Newton)
             </li>
             <li>
               <strong>Teléfono</strong>
@@ -269,8 +275,8 @@
           <!-- Mapa con la dirección real. Para un marcador exacto, usa
                Google Maps > Compartir > Insertar un mapa y pega aquí el src. -->
           <iframe
-            title="Mapa de ubicación — 13450 108 Ave, Surrey, BC"
-            src="https://www.google.com/maps?q=13450+108+Ave,+Surrey,+BC&output=embed"
+            title="Mapa de ubicación — 7170 132 St, Surrey, BC"
+            src="https://www.google.com/maps?q=7170+132+St,+Surrey,+BC&output=embed"
             width="100%"
             height="100%"
             style="border:0;"

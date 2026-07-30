@@ -139,38 +139,6 @@ a:hover { color: var(--gold); }
 .section-head h2 { font-size: clamp(2rem, 4vw, 2.8rem); }
 .section-sub { color: var(--muted); margin-top: .8rem; }
 
-/* ===================== Cards (horarios) ===================== */
-.cards-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-.cards-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 760px; margin-inline: auto; }
-.card-solo { max-width: 420px; margin-inline: auto; text-align: center; }
-.card {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 2rem 1.8rem;
-  box-shadow: var(--shadow);
-  border: 1px solid rgba(31,58,95,.05);
-  transition: transform .2s ease, box-shadow .2s ease;
-}
-.card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-.card h3 { font-size: 1.45rem; color: var(--navy); }
-.card-time { font-size: 1.6rem; font-weight: 700; color: var(--gold); margin: .3rem 0 .6rem; font-family: var(--sans); }
-.card p { color: var(--muted); margin: 0; }
-
-.location-bar {
-  margin-top: 2.5rem;
-  background: var(--navy);
-  color: var(--white);
-  border-radius: var(--radius);
-  padding: 2rem 2.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-.location-bar h3 { color: var(--white); font-size: 1.5rem; }
-.location-bar p { margin: .3rem 0 0; color: rgba(255,255,255,.85); }
-
 /* ===================== Nosotros ===================== */
 .about-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 3rem; align-items: start; }
 .about-photo { margin: 0 0 1.5rem; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
@@ -262,9 +230,7 @@ a:hover { color: var(--gold); }
   .nav a { padding: 1rem 6%; border-top: 1px solid rgba(31,58,95,.06); }
   .nav .nav-cta { border-radius: 0; text-align: center; }
 
-  .cards-3, .cards-2 { grid-template-columns: 1fr; }
   .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
-  .location-bar { flex-direction: column; align-items: flex-start; text-align: left; }
 }
 
 @media (prefers-reduced-motion: reduce) {

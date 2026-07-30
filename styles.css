@@ -142,6 +142,7 @@ a:hover { color: var(--gold); }
 /* ===================== Cards (horarios) ===================== */
 .cards-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 .cards-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 760px; margin-inline: auto; }
+.card-solo { max-width: 420px; margin-inline: auto; text-align: center; }
 .card {
   background: var(--white);
   border-radius: var(--radius);
@@ -215,19 +216,6 @@ a:hover { color: var(--gold); }
 .event-info p { margin: .25rem 0 0; color: var(--muted); }
 
 /* ===================== Prédicas ===================== */
-.sermon { display: flex; flex-direction: column; }
-.sermon-thumb {
-  height: 150px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, var(--navy), var(--navy-deep));
-  color: var(--gold-soft);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 2.4rem;
-  margin-bottom: 1.2rem;
-}
-.sermon h3 { font-size: 1.3rem; color: var(--navy); }
-.sermon-meta { color: var(--muted); font-size: .9rem; margin: .3rem 0 1rem; }
-.link-arrow { font-weight: 600; margin-top: auto; }
 .center-cta { text-align: center; margin-top: 2.5rem; }
 
 /* ===================== Contacto ===================== */

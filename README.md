@@ -27,15 +27,16 @@ python3 -m http.server 8000
 - **Dirección:** 7170 132 St, Surrey, BC (Newton)
 - **Teléfono:** (604) 728-8510
 - **Facebook:** https://www.facebook.com/tdvcanada/
-- **Horarios:** Domingo 3:00 PM · Miércoles 7:00 PM (estudio bíblico)
+- **Instagram:** https://www.instagram.com/tdvcanada/
+- **Horarios:** Domingo 3:00 PM (único servicio anunciado en el sitio)
 - **Misión e historia:** la iglesia abrió en Surrey en 2014 para servir
   a la creciente comunidad latina.
 
 ## Qué falta confirmar / personalizar (busca `TODO` en el código)
 
 - **Correo electrónico** — confirma el correo real (ahora usa un valor tentativo).
-- **Instagram / YouTube** — agrega los enlaces si la iglesia los tiene.
-- **Prédicas** — enlaza los videos reales de YouTube.
+- **Prédicas** — la iglesia no tiene canal de YouTube; el botón de la sección
+  Prédicas enlaza a su página de Facebook, donde publican los videos.
 - **Pastor** — agrega el nombre del pastor/líderes si se desea.
 - **Logo de mayor resolución** — el logo actual es de 180×180 px (recuperado
   del sitio anterior). Si tienes el archivo original, reemplaza `assets/logo.png`.

@@ -35,10 +35,6 @@ python3 -m http.server 8000
 
 - **Correo electrónico** — confirma el correo real (ahora usa un valor tentativo).
 - **Instagram / YouTube** — agrega los enlaces si la iglesia los tiene.
-- **Eventos (Google Calendar)** — la sección Eventos puede llenarse
-  automáticamente desde un Google Calendar. Configúralo en `script.js`
-  (objeto `CALENDAR`): ver instrucciones abajo. Mientras no esté configurado,
-  se muestran tres eventos de ejemplo.
 - **Prédicas** — enlaza los videos reales de YouTube.
 - **Pastor** — agrega el nombre del pastor/líderes si se desea.
 - **Logo de mayor resolución** — el logo actual es de 180×180 px (recuperado
@@ -46,35 +42,6 @@ python3 -m http.server 8000
 - **Fotos propias** — `assets/hero-worship.jpg` y `assets/community.jpg` son
   imágenes de archivo (Unsplash). Reemplázalas con fotos de la iglesia cuando
   las tengas (mismos nombres de archivo para no tocar el código).
-
-## Conectar Google Calendar (eventos automáticos)
-
-Los eventos se cargan solos desde un Google Calendar público. Pasos:
-
-1. **Haz público el calendario**
-   Google Calendar → *Configuración del calendario* → *Permisos de acceso* →
-   marca **"Hacer disponible para el público"**.
-2. **Copia el ID del calendario**
-   En la misma página, sección *Integrar calendario* → **ID del calendario**
-   (algo como `xxxx@group.calendar.google.com`).
-3. **Crea una API key**
-   https://console.cloud.google.com → *APIs y servicios* → habilita
-   **Google Calendar API** → *Credenciales* → *Crear credenciales* →
-   *Clave de API*. Restríngela por **Referentes HTTP** a tu dominio
-   (p. ej. `https://tudominio.com/*`) para que nadie más la use.
-4. **Pega los valores en `script.js`** dentro del objeto `CALENDAR`:
-   ```js
-   var CALENDAR = {
-     calendarId: "xxxx@group.calendar.google.com",
-     apiKey: "AIzaSy...",
-     maxEvents: 6,
-   };
-   ```
-
-Listo: la sección Eventos mostrará los próximos eventos del calendario
-(título, fecha, hora, descripción y lugar). Si algo falla o no hay eventos
-próximos, el sitio lo maneja con elegancia (eventos de ejemplo o un mensaje
-de "no hay eventos próximos").
 
 ## Publicar (hosting gratuito)
 

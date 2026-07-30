@@ -213,7 +213,6 @@ a:hover { color: var(--gold); }
 .event-month { font-size: .8rem; text-transform: uppercase; letter-spacing: .1em; color: var(--gold-soft); }
 .event-info h3 { font-size: 1.35rem; color: var(--navy); }
 .event-info p { margin: .25rem 0 0; color: var(--muted); }
-.events-empty { text-align: center; color: var(--muted); font-size: 1.05rem; margin-top: 1rem; }
 
 /* ===================== Prédicas ===================== */
 .sermon { display: flex; flex-direction: column; }
